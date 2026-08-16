@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Watermelon{
+    public static void main(String[] args){
+       
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int x = 0;
+        while(a!=0){
+            String s = sc.next();
+            if(s.equals("++X")){
+                ++x;
+            }else if(s.equals("X++")){
+                x++;
+            }else if(s.equals("X--")){
+                x--;
+            }else if(s.equals("--X")){
+                --x;
+            }
+            a--;
+        }
+        System.out.println(x);
+       
+       
+        sc.close();
+    }
+}
